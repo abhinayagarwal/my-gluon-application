@@ -27,7 +27,7 @@ jobs:
           gluon-license: ${{ secrets.GLUON_LICENSE }}
 
       - name: Gluon Build
-        run: mvn -Pdesktop gluonfx:build gluonfx:package
+        run: mvn -X -Pdesktop gluonfx:build gluonfx:package
 
       - name: Copy native image to staging
         run: cp -r target/gluonfx/x86_64-linux/HelloGluon* staging

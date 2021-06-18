@@ -134,6 +134,7 @@
                 <configuration>
                     <target>${gluonfx.target}</target>
                     <mainClass>${main.class}</mainClass>
+                    <verbose>true</verbose>
                     <attachList>
                         <list>display</list>
                         <list>lifecycle</list>
