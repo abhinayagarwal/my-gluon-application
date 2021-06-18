@@ -8,21 +8,20 @@ import com.gluonhq.charm.glisten.control.FloatingActionButton;
 import com.gluonhq.charm.glisten.mvc.View;
 import com.gluonhq.charm.glisten.visual.MaterialDesignIcon;
 import com.gluonhq.charm.glisten.visual.Swatch;
-import java.io.IOException;
-import java.util.ResourceBundle;
-import javafx.application.Application;
-import javafx.fxml.FXMLLoader;
 import javafx.geometry.Dimension2D;
+import javafx.geometry.Pos;
 import javafx.scene.Scene;
-import javafx.scene.layout.AnchorPane;
-import javafx.stage.Stage;
+import javafx.scene.control.Label;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
+import javafx.scene.layout.VBox
 
 public class Main extends MobileApplication {
 
     @Override
     public void init() {
         final Label label = new Label("Hello, Gluon Mobile!");
-        loadUserName(label);
+        // loadUserName(label);
 
         addViewFactory(HOME_VIEW, () -> {
             FloatingActionButton fab = new FloatingActionButton(MaterialDesignIcon.SEARCH.text,
